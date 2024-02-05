@@ -35,5 +35,10 @@ describe("template spec", () => {
 
     // add to cart
     cy.contains("Add to Cart").click();
+
+    // whishlist
+    cy.contains("Add to Wish List").click();
+
+    cy.get(".minicart-wrapper").click();
   });
 });
