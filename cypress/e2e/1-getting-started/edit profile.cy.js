@@ -27,7 +27,7 @@ describe('SCN01 EDIT ACCOUNT INFORMATION', () => {
     })
 
       it('TC03_Edit Password Account Information (Positive case)', () => {
-      cy.get('#email').clear().type('dopildopa@gmail.com')
+      cy.get('#email').clear().type('dopil@gmail.com')
       cy.get('.login-container > .block-customer-login > .block-content > #login-form > .fieldset > .password > .control > #pass').clear().type('@Aroma321')
       cy.get('.login-container > .block-customer-login > .block-content > #login-form > .fieldset > .actions-toolbar > div.primary > #send2 > span').click()
       cy.get('.change-password').click()
